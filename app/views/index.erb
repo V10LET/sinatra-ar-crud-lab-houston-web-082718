@@ -1,0 +1,5 @@
+<h1>My blogs!</h1>
+<% @posts.each do |post| %>
+<h3><a href="posts/<%= post.id %>">Title: <%= post.name %></a></h3>
+<p>Content: <%= post.content %></p>
+<% end %>
